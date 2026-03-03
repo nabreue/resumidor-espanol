@@ -4,8 +4,8 @@ import torch
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Resumidor Pro - Español",
-    page_icon="🤖",
+    page_title="Resumidor - Español",
+    
     layout="centered"
 )
 
@@ -79,7 +79,7 @@ def load_summarizer():
         return pipeline("summarization", model=model_name)
 
 def main():
-    st.title("✨ Resumidor de Texto en Español")
+    st.title("Resumidor de Texto en Español")
     st.markdown("Genera resúmenes precisos de tus textos de forma totalmente **local**.")
 
     # Cargar modelo con spinner
@@ -95,7 +95,7 @@ def main():
     with col2:
         min_len = st.slider("Longitud mínima del resumen", 10, 50, 30)
 
-    if st.button("🚀 Generar Resumen"):
+    if st.button("Generar Resumen"):
         if text_input.strip() == "":
             st.warning("Por favor, introduce algún texto para resumir.")
         else:
