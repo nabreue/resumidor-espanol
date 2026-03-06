@@ -1,0 +1,246 @@
+{
+    "train": [
+        {
+            "text": "Apple ha presentado su nuevo procesador M4, fabricado con el proceso de 3 nanómetros de TSMC. El chip incorpora un motor de inteligencia artificial que ejecuta 38 billones de operaciones por segundo y supera en un 40% al M3 en tareas de aprendizaje automático. Los primeros MacBook Pro con M4 ya están disponibles en la tienda oficial de Apple desde esta semana.",
+            "summary": "Apple lanza el chip M4 con proceso de 3nm y motor IA de 38 TOPS, disponible en los nuevos MacBook Pro."
+        },
+        {
+            "text": "OpenAI ha publicado GPT-4o, una nueva versión de su modelo insignia que procesa texto, imágenes y audio de forma nativa en un único modelo unificado. La compañía asegura que el tiempo de respuesta se ha reducido un 50% respecto a GPT-4 Turbo y que el modelo es especialmente eficiente en idiomas distintos al inglés, incluyendo el español.",
+            "summary": "OpenAI presenta GPT-4o, modelo multimodal unificado con respuestas un 50% más rápidas y mejor soporte en español."
+        },
+        {
+            "text": "Google ha lanzado Gemini 1.5 Pro, un modelo de lenguaje con una ventana de contexto de hasta un millón de tokens, la más larga disponible comercialmente. Esta capacidad permite al modelo analizar libros enteros, horas de vídeo o bases de código extensas en una sola consulta. La API ya está disponible para desarrolladores a través de Google AI Studio.",
+            "summary": "Google lanza Gemini 1.5 Pro con ventana de contexto de un millón de tokens, la mayor disponible comercialmente."
+        },
+        {
+            "text": "Meta ha liberado los pesos de Llama 3, su nueva familia de modelos de lenguaje de código abierto, con versiones de 8B y 70B de parámetros. Los benchmarks internos muestran que Llama 3 70B supera a GPT-3.5 y se acerca al rendimiento de GPT-4 en varias pruebas de razonamiento. La compañía ha publicado los pesos en Hugging Face para que cualquier desarrollador pueda usarlos.",
+            "summary": "Meta libera Llama 3 en open source (8B y 70B parámetros), superando a GPT-3.5 y acercándose a GPT-4 en benchmarks."
+        },
+        {
+            "text": "El Parlamento Europeo ha aprobado definitivamente el Reglamento de Inteligencia Artificial (AI Act), convirtiéndose en la primera legislación integral sobre IA del mundo. La norma clasifica los sistemas de IA según su nivel de riesgo y prohíbe aplicaciones consideradas inaceptables, como el reconocimiento facial masivo en espacios públicos. Las empresas tendrán hasta 2026 para adaptarse a los requisitos más exigentes.",
+            "summary": "La UE aprueba el AI Act, primera ley mundial de IA, que clasifica sistemas por riesgo y prohíbe el reconocimiento facial masivo."
+        },
+        {
+            "text": "Tesla ha lanzado la versión 12 de su software Full Self-Driving (FSD), que abandona el código explícito basado en reglas y adopta una red neuronal de extremo a extremo entrenada con millones de horas de conducción real. La actualización mejora significativamente el comportamiento en intersecciones y rotondas, dos de los puntos más críticos de versiones anteriores.",
+            "summary": "Tesla FSD v12 usa una red neuronal end-to-end en lugar de reglas explícitas, mejorando el comportamiento en intersecciones."
+        },
+        {
+            "text": "IBM ha alcanzado un hito en computación cuántica al presentar el procesador Eagle de 127 qubits estables, capaz de resolver problemas de optimización que tardarían miles de años en un ordenador clásico. El sistema ya es accesible de forma remota para investigadores y empresas mediante IBM Quantum Network. El próximo objetivo del laboratorio es superar los 1.000 qubits operativos.",
+            "summary": "IBM presenta el procesador cuántico Eagle de 127 qubits, accesible remotamente, con miras a superar los 1.000 qubits."
+        },
+        {
+            "text": "Un grupo de hackers ha comprometido los sistemas del Servicio Público de Empleo Estatal (SEPE) mediante un ataque de ransomware, paralizando miles de citas y el pago de prestaciones durante días. Los atacantes utilizaron el malware Ryuk para cifrar los archivos. El Gobierno activó el protocolo de emergencia del Centro Nacional de Inteligencia (CNI) para contener la brecha.",
+            "summary": "Un ataque de ransomware Ryuk paralizó los sistemas del SEPE durante días, bloqueando prestaciones y citas."
+        },
+        {
+            "text": "Telefónica ha completado el despliegue de su red 5G en las 50 capitales de provincia españolas, alcanzando una cobertura del 75% de la población nacional. La operadora anuncia velocidades pico de hasta 900 Mbps en zonas urbanas densas y latencias inferiores a 10 milisegundos, habilitando nuevos casos de uso industriales como la fábrica conectada.",
+            "summary": "Telefónica completa el 5G en las 50 capitales españolas con cobertura del 75% y velocidades de hasta 900 Mbps."
+        },
+        {
+            "text": "Elon Musk ha presentado una demanda contra OpenAI y sus fundadores, alegando que la organización traicionó su misión original como empresa sin ánimo de lucro centrada en la seguridad de la IA. Musk, cofundador de OpenAI, afirma que la inversión de Microsoft de 13.000 millones de dólares convirtió la entidad en una empresa comercial que prioriza los beneficios sobre la investigación abierta.",
+            "summary": "Musk demanda a OpenAI por traicionar su misión sin ánimo de lucro tras la inversión de 13.000 millones de Microsoft."
+        },
+        {
+            "text": "Nvidia ha anunciado los chips de la serie H200, sucesor del H100, que duplica la capacidad de memoria HBM3e hasta 141 GB y ofrece hasta un 60% más de rendimiento en inferencia de modelos de lenguaje grandes. La demanda supera la oferta actual: los principales proveedores cloud ya tienen listas de espera de más de seis meses.",
+            "summary": "Nvidia presenta el H200 con 141 GB HBM3e y un 60% más de rendimiento en IA; la demanda supera ampliamente la oferta."
+        },
+        {
+            "text": "Microsoft ha integrado GitHub Copilot directamente en el ecosistema Office bajo el nombre Microsoft 365 Copilot, permitiendo a los usuarios generar documentos Word, análisis en Excel y presentaciones PowerPoint a partir de indicaciones en lenguaje natural. La herramienta ya está disponible para empresas con más de 300 empleados a 30 dólares por usuario al mes.",
+            "summary": "Microsoft lanza 365 Copilot, que integra IA generativa en Word, Excel y PowerPoint por 30 $/usuario/mes."
+        },
+        {
+            "text": "Amazon Web Services (AWS) ha presentado Bedrock, una plataforma que permite a los desarrolladores construir aplicaciones de IA generativa sobre modelos base de Anthropic, AI21 Labs y Stability AI sin gestionar infraestructura. El servicio ofrece fine-tuning privado para que las empresas puedan personalizar los modelos con sus propios datos sin que salgan de su entorno AWS.",
+            "summary": "AWS lanza Bedrock, plataforma de IA generativa con acceso a modelos de Anthropic y Stability AI con fine-tuning privado."
+        },
+        {
+            "text": "Samsung ha presentado el Galaxy S25 Ultra equipado con el nuevo chip Snapdragon 8 Elite y 12 GB de RAM LPDDR5X. El dispositivo incorpora un nuevo sistema de IA on-device llamado Galaxy AI, que permite traducción simultánea de llamadas, generación de notas automáticas y búsqueda inteligente en fotos sin conexión a internet.",
+            "summary": "Samsung Galaxy S25 Ultra llega con Snapdragon 8 Elite y Galaxy AI para traducción, notas y búsqueda fotográfica offline."
+        },
+        {
+            "text": "Sony ha confirmado que PlayStation 6 utilizará una GPU AMD de arquitectura RDNA 4, con capacidad de ray tracing en tiempo real a 8K. La consola incorporará un chip dedicado de IA para upscaling de imágenes similar al DLSS de Nvidia. La fecha de lanzamiento se espera para finales de 2026 a un precio orientativo de 599 euros.",
+            "summary": "Sony confirma PS6 con GPU AMD RDNA 4, ray tracing a 8K y chip IA para upscaling; llegará en 2026 por 599 €."
+        },
+        {
+            "text": "X, la red social antes conocida como Twitter, ha implementado una nueva política que permite cobrar a los nuevos usuarios en determinados países una tarifa de un dólar al año para publicar contenido. Elon Musk argumenta que esta medida busca reducir el número de bots automatizados que difunden desinformación en la plataforma.",
+            "summary": "X cobra 1 $/año a nuevos usuarios en algunos países para publicar, con el objetivo de reducir bots y desinformación."
+        },
+        {
+            "text": "GitHub ha anunciado Copilot Workspace, un entorno de desarrollo aumentado por IA que permite a los programadores describir en lenguaje natural una tarea compleja y obtener un plan de implementación, código generado y tests automáticos antes de abrir siquiera un editor. La herramienta está actualmente en acceso anticipado para desarrolladores seleccionados.",
+            "summary": "GitHub Copilot Workspace genera planes, código y tests a partir de descripciones en lenguaje natural; en acceso anticipado."
+        },
+        {
+            "text": "DeepMind ha publicado una nueva versión de AlphaFold capaz de predecir la estructura 3D de protéinas con una precisión superior al 95% incluso para protéinas sin homólogos conocidos. La herramienta ya ha permitido a laboratorios de todo el mundo identificar dianas farmacológicas para enfermedades como el Alzheimer y la malaria, acelerando el proceso de descubrimiento de fármacos.",
+            "summary": "DeepMind presenta AlphaFold mejorado con más del 95% de precisión en proteínas sin homólogos, acelerando el descubrimiento de fármacos."
+        },
+        {
+            "text": "SpaceX ha completado con éxito el cuarto vuelo de prueba de Starship, el cohete más grande jamás construido, alcanzando órbita baja y completando la reentrada atmosférica por primera vez. Ambas etapas del cohete lograron un amaraje controlado, aunque la nave aún no fue recuperada en su totalidad. La NASA supervisa el progreso para el programa Artemis de regreso a la Luna.",
+            "summary": "SpaceX completa el cuarto vuelo de Starship alcanzando órbita baja y realizando la primera reentrada atmosférica exitosa."
+        },
+        {
+            "text": "La Comisión de Bolsa y Valores de EE. UU. (SEC) ha aprobado los primeros fondos cotizados (ETF) de Bitcoin al contado, permitiendo a los inversores institucionales exponerse a la criptomoneda sin necesidad de custodia propia. En las primeras 48 horas de cotización, los ETFs captaron más de 4.600 millones de dólares en activos bajo gestión.",
+            "summary": "La SEC aprueba los primeros ETF de Bitcoin al contado; en 48 horas captaron más de 4.600 millones de dólares."
+        },
+        {
+            "text": "El Congreso de Estados Unidos ha aprobado una ley que obliga a ByteDance a vender TikTok en un plazo de nueve meses o enfrentar su prohibición en el país por motivos de seguridad nacional. La compañía china anunció que luchará contra la medida en los tribunales, alegando que viola la Primera Enmienda sobre libertad de expresión.",
+            "summary": "EE. UU. obliga a ByteDance a vender TikTok en 9 meses o ser prohibida; la empresa recurrirá en tribunales."
+        },
+        {
+            "text": "La Agencia Española de Protección de Datos (AEPD) ha multado a una empresa de telecomunicaciones con 6,1 millones de euros por ceder datos de clientes a terceros sin consentimiento explícito, en vulneración del Reglamento General de Protección de Datos. Es la mayor sanción en materia de GDPR impuesta por la AEPD en lo que va de año.",
+            "summary": "La AEPD multa a una operadora con 6,1 M€ por ceder datos de clientes sin consentimiento, la mayor sanción GDPR del año."
+        },
+        {
+            "text": "Starlink ha obtenido la autorización de la Comisión Nacional de los Mercados y la Competencia (CNMC) para operar como operador de telecomunicaciones en España. El servicio de internet por satélite de SpaceX ya ofrece velocidades de entre 100 y 200 Mbps en zonas rurales donde el ADSL y la fibra no llegan, a un precio de 40 euros al mes más 500 en hardware.",
+            "summary": "Starlink consigue licencia en España para ofrecer internet satelital de 100-200 Mbps en zonas rurales por 40 €/mes."
+        },
+        {
+            "text": "Apple ha lanzado Vision Pro, su primer ordenador espacial, a un precio de 3.499 dólares en Estados Unidos. El dispositivo combina realidad aumentada y virtual mediante dos pantallas micro-OLED de 4K por ojo y se controla con los ojos, las manos y la voz sin necesidad de controladores externos. Los analistas prevén ventas limitadas el primer año por su elevado coste.",
+            "summary": "Apple lanza Vision Pro a 3.499 $, headset con pantallas 4K micro-OLED y control ocular, gestual y vocal sin mandos."
+        },
+        {
+            "text": "Google ha anunciado Android 15 con importantes mejoras de privacidad: las aplicaciones ya no podrán acceder a la ubicación exacta del usuario si este concede solo permiso de ubicación aproximada, y se introduce una nueva caja fuerte de aplicaciones protegida con PIN o biometría para ocultar apps sensibles. La actualización llegará primero a los Pixel en otoño.",
+            "summary": "Android 15 refuerza la privacidad limitando el acceso a la ubicación exacta e introduciendo una caja fuerte de aplicaciones."
+        },
+        {
+            "text": "Microsoft trabaja en Windows 12, nombre en clave Hudson Valley, que integrará un panel de IA siempre visible en la barra lateral del escritorio. El sistema operativo utilizará modelos de lenguaje ejecutados de forma local en dispositivos compatibles con la nueva plataforma Copilot+ PC, que requiere al menos 40 TOPS de rendimiento en la NPU.",
+            "summary": "Windows 12 integrará IA local en la barra lateral; los Copilot+ PC requerirán 40 TOPS de NPU para activarla."
+        },
+        {
+            "text": "Linus Torvalds ha liberado el kernel de Linux 6.9, que incorpora soporte nativo para el nuevo estándar de memoria LPCAMM2, mejoras en el rendimiento del sistema de archivos Btrfs y drivers actualizados para las GPU AMD de la serie RDNA 3. La comunidad de desarrolladores contribuyó con más de 13.000 parches en este ciclo de desarrollo.",
+            "summary": "Linux 6.9 añade soporte LPCAMM2, mejoras en Btrfs y drivers RDNA 3; incorpora más de 13.000 parches de la comunidad."
+        },
+        {
+            "text": "La Python Software Foundation ha lanzado Python 3.13, que introduce un modo de intérprete libre de GIL (Global Interpreter Lock) de forma experimental, lo que permitirá a los programas multihilo aprovechar verdaderamente los procesadores multinúcleo modernos. Además, se mejoran los mensajes de error para facilitar el aprendizaje del lenguaje.",
+            "summary": "Python 3.13 introduce el modo sin GIL experimental para verdadero multihilo y mejora significativamente los mensajes de error."
+        },
+        {
+            "text": "Stack Overflow ha publicado su encuesta anual a desarrolladores 2024, en la que el 76% de los encuestados afirma usar ya herramientas de IA en su flujo de trabajo diario. GitHub Copilot lidera la adopción con un 55% de uso, seguido de ChatGPT con un 48%. Sin embargo, solo el 43% confía plenamente en la corrección del código generado por IA.",
+            "summary": "El 76% de desarrolladores ya usa IA según Stack Overflow 2024; Copilot lidera con 55%, pero solo el 43% confía en su código."
+        },
+        {
+            "text": "Movistar ha detectado y bloqueado un ataque de denegación de servicio distribuido (DDoS) que superó los 1,1 terabits por segundo, el mayor registrado en España hasta la fecha. El ataque, dirigido contra infraestructuras críticas de un cliente del sector financiero, fue neutralizado en menos de ocho minutos gracias al sistema de mitigación automática de la operadora.",
+            "summary": "Movistar neutraliza el mayor DDoS registrado en España (1,1 Tbps) en menos de 8 minutos con mitigación automática."
+        },
+        {
+            "text": "El Consejo de Ministros ha aprobado un proyecto de ley que establece penas de hasta dos años de prisión para la creación y difusión de deepfakes sin consentimiento de la persona retratada. La norma también obliga a las plataformas a eliminar este tipo de contenido en menos de 24 horas tras la notificación, bajo multas de hasta 500.000 euros.",
+            "summary": "España aprueba penas de hasta 2 años por crear deepfakes sin consentimiento y multa de 500.000 € a plataformas que no los retiren en 24h."
+        },
+        {
+            "text": "Boston Dynamics ha presentado Atlas, su primer robot humanoide totalmente eléctrico, que sustituye la versión hidráulica anterior. El nuevo modelo es más ligero, silencioso y eficiente energéticamente, con una autonomía de batería de cuatro horas. La empresa ha anunciado una colaboración con Hyundai para integrar Atlas en líneas de fabricación automóviles.",
+            "summary": "Boston Dynamics lanza Atlas eléctrico, más ligero y con 4h de autonomía; Hyundai lo integrará en sus fábricas."
+        },
+        {
+            "text": "Waymo ha extendido su servicio de taxis autónomos Robotaxi a la ciudad de San Francisco para el público general, sin necesidad de invitación. Los vehículos del parque, Jaguar I-Pace totalmente eléctricos, cubren toda la superficie central de la ciudad durante las 24 horas. En el primer mes se realizaron más de 100.000 viajes sin conductor de seguridad a bordo.",
+            "summary": "Waymo abre su servicio Robotaxi al público en San Francisco; 100.000 viajes completados en el primer mes sin conductor."
+        },
+        {
+            "text": "Hugging Face ha cerrado una ronda de financiación Serie D de 235 millones de dólares liderada por Google y Salesforce, elevando su valoración a 4.500 millones de dólares. La empresa, conocida como 'el GitHub de la IA', aloja más de 500.000 modelos y 100.000 datasets de acceso abierto utilizados por millones de desarrolladores en todo el mundo.",
+            "summary": "Hugging Face recauda 235 M$ con Google y Salesforce, alcanzando una valoración de 4.500 M$ y como hub de 500.000 modelos open."
+        },
+        {
+            "text": "Mistral AI, la startup europea de inteligencia artificial, ha publicado Mistral Large, un modelo de 123 mil millones de parámetros que compite directamente con GPT-4 en benchmarks de razonamiento matemático y programación. La empresa francesa ha optado por una licencia comercial restringida frente al open source de sus modelos anteriores.",
+            "summary": "Mistral lanza el modelo Large de 123B parámetros que rivalizaría con GPT-4, aunque ya bajo licencia comercial restringida."
+        },
+        {
+            "text": "La startup Groq ha captado la atención del sector tecnológico al demostrar velocidades de inferencia de hasta 500 tokens por segundo con modelos Llama en su chip LPU (Language Processing Unit), mucho más rápido que los procesadores A100 de Nvidia. La empresa ofrece acceso gratuito a la API durante el periodo de beta para atraer a desarrolladores.",
+            "summary": "Groq demuestra 500 tokens/seg en Llama con su chip LPU, superando a Nvidia A100 en velocidad de inferencia."
+        },
+        {
+            "text": "Las empresas del IBEX 35 han aumentado su adopción de sistemas RAG (Retrieval-Augmented Generation) para construir asistentes corporativos que responden preguntas sobre documentación interna sin riesgo de enviar datos confidenciales a proveedores externos. Según un informe de IDG, el 34% de las grandes empresas españolas ya tiene proyectos piloto de RAG en producción.",
+            "summary": "El 34% de las grandes empresas españolas tiene proyectos RAG en producción para asistentes corporativos con datos internos."
+        },
+        {
+            "text": "Firefox ha publicado su informe de cuota de mercado de navegadores correspondiente al primer trimestre de 2024, que revela que su uso global ha caído al 3,2%, el mínimo histórico del navegador de Mozilla. Chrome mantiene el 65% del mercado, mientras que Edge crece hasta el 13% impulsado por su integración con Copilot.",
+            "summary": "Firefox cae a su mínimo histórico del 3,2% de cuota de mercado; Chrome lidera con el 65% y Edge sube al 13%."
+        },
+        {
+            "text": "Microsoft Edge ha superado por primera vez en España a Safari en cuota de usuario de escritorio, alcanzando el 12,4% frente al 11,9% del navegador de Apple, según datos de StatCounter. El crecimiento de Edge se atribuye a su actualización con funciones de IA integradas, como resumen de páginas web y generación de imágenes con DALL-E.",
+            "summary": "Edge supera a Safari en España en escritorio (12,4% vs 11,9%) gracias a sus funciones de IA integradas."
+        },
+        {
+            "text": "El uso de VPNs en España ha crecido un 38% en el último año según un informe de Atlas VPN, impulsado principalmente por el auge del teletrabajo y el interés en sortear restricciones geográficas en plataformas de streaming. El 28% de los usuarios españoles de internet afirma haber utilizado una VPN al menos una vez en los últimos seis meses.",
+            "summary": "El uso de VPNs en España creció un 38% impulsado por el teletrabajo y el streaming; el 28% de internautas las ha probado."
+        },
+        {
+            "text": "Una investigación de la Universidad Politécnica de Madrid ha concluido que el consumo energético de los grandes modelos de IA supera ya al de países como Argentina o Polonia. El entrenamiento de un único modelo del tamaño de GPT-4 emite una cantidad de CO₂ equivalente a 500 vuelos transatlánticos, lo que ha reabierto el debate sobre la sostenibilidad de la IA.",
+            "summary": "Investigadores madrileños estiman que la IA consume más energía que Argentina; entrenar GPT-4 equivale a 500 vuelos transatlánticos."
+        },
+        {
+            "text": "Varios hospitales públicos de la Comunidad de Madrid han comenzado a usar sistemas de IA para analizar imágenes de tomografía computarizada y detectar tumores pulmonares en etapas tempranas con una sensibilidad del 94%. El sistema, desarrollado por una startup española, reduce el tiempo de diagnóstico de semanas a menos de 24 horas.",
+            "summary": "Hospitales madrileños adoptan IA española para detectar tumores pulmonares en TAC con 94% de sensibilidad en menos de 24h."
+        },
+        {
+            "text": "El informe Startup Radar 2024 de South Summit identifica a España como el cuarto ecosistema de startups de IA en Europa, solo por detrás de Reino Unido, Francia y Alemania. Madrid concentra el 62% de las startups de IA nacionales y ha visto crecer la inversión en este sector un 87% en el último año.",
+            "summary": "España es el cuarto ecosistema europeo de IA según South Startup; Madrid concentra el 62% y la inversión creció un 87%."
+        },
+        {
+            "text": "El debate sobre el futuro del software de código abierto ha recrudecido tras la decisión de Mistral AI de cambiar la licencia de sus últimos modelos de Apache 2.0 a una licencia comercial restrictiva. Organizaciones como la OSI (Open Source Initiative) argumentan que esta tendencia pone en riesgo el acceso abierto al conocimiento en inteligencia artificial.",
+            "summary": "Mistral adopta licencia restrictiva en sus nuevos modelos, avivando el debate sobre el open source en IA con la OSI."
+        },
+        {
+            "text": "El Ministerio de Asuntos Económicos ha publicado el borrador del reglamento nacional de deepfakes, que obligará a insertar marcas de agua criptográficas invisibles en todo contenido generado por IA distribuido públicamente. Los modelos de IA que no respeten esta obligación recibirán sanciones de entre 50.000 y 1.000.000 de euros.",
+            "summary": "España exigirá marcas de agua criptográficas en todo contenido IA distribuido; el incumplimiento acarrea multas de hasta 1 M€."
+        },
+        {
+            "text": "El uso de la IA generativa en el ámbito educativo en España ha crecido un 210% en un solo curso escolar según datos del Ministerio de Educación. Aunque muchos centros la usan como herramienta de apoyo al aprendizaje, el 67% del profesorado encuestado declara no haber recibido formación específica para detectar plagios generados con IA.",
+            "summary": "La IA generativa en educación creció un 210% en España, pero el 67% del profesorado carece de formación para detectar plagios IA."
+        },
+        {
+            "text": "TSMC ha anunciado el inicio de la producción en masa de chips con proceso de 2 nanómetros en su planta de Hsinchu, Taiwán. El nuevo nodo ofrece hasta un 15% más de velocidad y un 30% de ahorro energético respecto al N3E de 3nm. El primer cliente confirmado en recibir chips N2 es Apple para su próxima línea de procesadores M5.",
+            "summary": "TSMC inicia producción en masa de chips a 2nm con un 15% más de velocidad y 30% menos consumo; Apple será el primer cliente."
+        },
+        {
+            "text": "AMD ha presentado los procesadores Ryzen 9000 basados en la arquitectura Zen 5, fabricados en proceso de 4nm por TSMC. La nueva generación ofrece hasta un 16% de aumento de IPC (instrucciones por ciclo) y viene equipada con una NPU mejorada capaz de ejecutar modelos de lenguaje pequeños directamente en el procesador.",
+            "summary": "AMD Ryzen 9000 con Zen 5 y 4nm mejora el IPC un 16% e incluye NPU para inferencia local de modelos de lenguaje."
+        },
+        {
+            "text": "El mercado de servicios cloud en España alcanzó los 3.800 millones de euros en 2023, con un crecimiento del 24% respecto al año anterior, según IDC Research. AWS lidera con el 34% de cuota de mercado, seguido de Azure con el 29% y Google Cloud con el 17%. Las pymes son el segmento de mayor crecimiento, impulsadas por las subvenciones del plan de digitalización.",
+            "summary": "El cloud en España facturó 3.800 M€ en 2023 (+24%); AWS lidera con 34%, seguido de Azure y Google Cloud en el mercado nacional."
+        },
+        {
+            "text": "La startup española Predik Data-Driven ha desarrollado un sistema de IA que predice con tres semanas de antelación el riesgo de abandono escolar en alumnos de secundaria, combinando datos académicos, socioeconómicos y de asistencia. La herramienta ya se aplica en más de 200 centros públicos de Andalucía con una precisión del 89%.",
+            "summary": "Startup española predice el abandono escolar con 3 semanas de antelación y 89% de precisión en 200 centros andaluces."
+        }
+    ],
+    "validation": [
+        {
+            "text": "Google ha actualizado Bard con la tecnología de Gemini Pro, mejorando sustancialmente sus capacidades de razonamiento y comprensión lectora. El chatbot ahora puede procesar imágenes directamente en el chat y generar código Python que se ejecuta en tiempo real mediante Google Colab. La actualización está disponible de forma gratuita en más de 170 países.",
+            "summary": "Google actualiza Bard con Gemini Pro para procesar imágenes y ejecutar código Python en Colab; disponible gratis en 170 países."
+        },
+        {
+            "text": "Filtraciones de componentes anticipan que el iPhone 17 será el primero de la gama estándar de Apple en incorporar una cámara periscópica con zoom óptico de 5x, reservada hasta ahora para los modelos Pro. Además, se espera un rediseño notable con un marco más fino fabricado en aluminio de grado aeroespacial y la desaparición de la isla dinámica.",
+            "summary": "Filtraciones apuntan a que el iPhone 17 incorporará cámara periscópica 5x y rediseño sin isla dinámica."
+        },
+        {
+            "text": "El IEEE ha ratificado Wi-Fi 7 (802.11be) como estándar oficial, consolidando las velocidades de hasta 46 Gbps en banda de 6 GHz y la tecnología Multi-Link Operation, que permite a los dispositivos conectarse simultáneamente a varias bandas para reducir la latencia. Los primeros routers comerciales compatibles ya están disponibles en el mercado europeo.",
+            "summary": "El IEEE ratifica Wi-Fi 7 con hasta 46 Gbps y tecnología Multi-Link; los primeros routers ya están disponibles en Europa."
+        },
+        {
+            "text": "Un estudio de la Universidad de Stanford calcula que el consumo de agua para refrigeración de los centros de datos de IA en Estados Unidos supera ya los 700 millones de litros diarios, cifra equivalente al consumo urbano de una ciudad de 2 millones de habitantes. Los autores proponen adoptar sistemas de refrigeración por inmersión como alternativa más sostenible.",
+            "summary": "La IA consume 700 millones de litros de agua al día en EE. UU. para refrigeración, equivalente a una ciudad de 2 M de habitante."
+        },
+        {
+            "text": "La Comisión Europea ha abierto un expediente antimonopolio contra Google por su tratamiento preferente de los servicios de Google Flights y Google Hotels en los resultados de búsqueda, en detrimento de competidores como Skyscanner o Booking. La compañía podría enfrentarse a multas de hasta el 10% de su facturación global si se confirma la infracción.",
+            "summary": "Bruselas abre expediente antimonopolio contra Google por favorecer en buscadores sus servicios de viajes frente a competidores."
+        },
+        {
+            "text": "OpenAI ha activado la función de memoria persistente en ChatGPT para las cuentas de pago, permitiendo que el modelo recuerde preferencias, proyectos y contexto de conversaciones anteriores de forma automática. Los usuarios pueden revisar, editar o eliminar cualquier dato almacenado desde la configuración de privacidad de su cuenta.",
+            "summary": "ChatGPT Plus activa la memoria persistente para recordar preferencias entre conversaciones; los usuarios pueden gestionarla desde privacidad."
+        },
+        {
+            "text": "Un consorcio de instalaciones fotovoltaicas en Extremadura ha comenzado a usar modelos de predicción de IA para anticipar la producción de energía solar con un margen de error del 3%, permitiendo a los gestores de red equilibrar mejor la demanda y reducir los vertidos de energía en periodos de alta generación. El proyecto, financiado por el CDTI, prevé extenderse a diez comunidades autónomas.",
+            "summary": "IA predice la producción fotovoltaica en Extremadura con un 3% de error, reduciendo vertidos y mejorando el equilibrio de la red."
+        },
+        {
+            "text": "Google ha liberado Gemma, una familia de modelos de lenguaje abiertos basada en la misma arquitectura que Gemini, en versiones de 2B y 7B de parámetros. Los modelos están optimizados para ejecutarse en hardware de consumo —incluyendo portátiles y smartphones— y vienen acompañados de instrucciones de fine-tuning y despliegue local.",
+            "summary": "Google libera Gemma (2B y 7B) en open source, optimizado para ejecutarse en portátiles y smartphones con guías de fine-tuning."
+        },
+        {
+            "text": "Un informe de la Organización Mundial de la Salud advierte que los chatbots de IA utilizados en aplicaciones de salud mental carecen en el 78% de los casos de mecanismos de derivación a profesionales cuando el usuario presenta señales de riesgo. La OMS pide regulación específica que obligue a integrar protocolos de crisis en todos estos sistemas.",
+            "summary": "La OMS alerta: el 78% de chatbots de salud mental sin mecanismos de derivación a profesionales; pide regulación urgente."
+        },
+        {
+            "text": "Investigadores del MIT y la Universidad de Chicago han presentado un chip neuromórfico que reduce en un 90% el consumo energético respecto a los procesadores convencionales en tareas de visión artificial, al imitar el comportamiento de las neuronas biológicas. El prototipo puede ejecutar redes neuronales convolucionales para reconocimiento de imágenes con solo 10 miliwatios.",
+            "summary": "MIT y U. Chicago presentan chip neuromórfico que ejecuta CNNs con 10 mW, un 90% más eficiente que procesadores convencionales."
+        }
+    ]
+}
