@@ -1,0 +1,34 @@
+# ── Pesos del modelo (demasiado grandes para GitHub) ──────────────────────────
+model_finetuned/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Entornos virtuales ────────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+.env
+
+# ── Caché de Hugging Face  ────────────────────────────────────────────────────
+.cache/
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+
+# ── Logs de entrenamiento ─────────────────────────────────────────────────────
+runs/
+wandb/
+lightning_logs/
