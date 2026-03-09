@@ -265,5 +265,4 @@ def main():
     st.caption("Desarrollado con Hugging Face Transformers & Streamlit | Ejecución Local")
 
 if __name__ == "__main__":
-    src_app = Path(__file__).parent / "src" / "app.py"
-    subprocess.run([sys.executable, str(src_app)], check=True)
+    main()

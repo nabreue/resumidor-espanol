@@ -6,10 +6,10 @@
 
 ## Integrantes
 
-| Nombre | Rol |
-|--------|-----|
-| [Nombre Integrante 1] | Desarrollo del modelo y fine-tuning |
-| [Nombre Integrante 2] | Interfaz, dataset y documentación |
+| Nombre |
+|--------|
+| [Juan] | 
+| [Neilin] |
 
 ---
 

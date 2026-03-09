@@ -1,0 +1,17 @@
+Arir cmd en la ruta del proyecto
+pip install -r requirements.txt
+python src/app.py
+
+cd d:\resumidor-espanol
+pip install -r requirements.txt
+python src/app.py
+
+
+
+TEXTO PRUEBA:
+La tecnología está presente en medicina, comunicación, educación y trabajo, 
+siendo crucial para el desarrollo económico. Entre las innovaciones actuales 
+destacan la inteligencia artificial, la realidad virtual, la edición de genes 
+y el 5G. El enfoque STEM es vital para el aprendizaje moderno. Aunque mejora la 
+productividad, puede generar brechas sociales y problemas éticos. La tecnología 
+es un proceso de constante innovación que reestructura la interacción humana y el entorno laboral.
