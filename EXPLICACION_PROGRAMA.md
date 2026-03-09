@@ -13,13 +13,17 @@ Es una aplicación web **local** que resume textos en español usando inteligenc
 ## 📦 Paso 1 — Importaciones de librerías
 
 ```python
-import subprocess, sys
+import sys
 from pathlib import Path
 import streamlit as st
 from transformers import pipeline
 import torch
 import docx
 from pypdf import PdfReader
+
+# Añadir src/ al path para importar utils
+sys.path.insert(0, str(Path(__file__).parent / "src"))
+from utils import get_model_path
 ```
 
 | Librería | Función |
@@ -29,6 +33,7 @@ from pypdf import PdfReader
 | `torch` | Detecta si hay GPU disponible para acelerar |
 | `docx` | Lee archivos Word (`.docx`) |
 | `pypdf` | Lee archivos PDF |
+| `utils` | Función personalizada para obtener la ruta del modelo |
 
 ---
 
@@ -61,11 +66,12 @@ Aplica un tema oscuro premium a la app:
 ```python
 @st.cache_resource
 def load_summarizer():
-    model_name = "Narrativa/bsc_roberta2roberta_shared-spanish-finetuned-mlsum-summarization"
+    # Usar modelo fine-tuned si existe, o base de Hugging Face
+    model_name = get_model_path()
     ...
 ```
 
-- **Modelo usado:** `Narrativa/bsc_roberta2roberta_shared-spanish-finetuned-mlsum-summarization`, especializado en español.
+- **Modelo usado:** Seleccionado dinámicamente mediante `get_model_path()`. Si detecta la carpeta `model_finetuned/` usa ese modelo reentrenado. Si no, usa el modelo base especializado `Narrativa/bsc_roberta2roberta_shared-spanish-finetuned-mlsum-summarization`.
 - **`@st.cache_resource`:** Carga el modelo **solo la primera vez** y lo mantiene en memoria. Las siguientes ejecuciones son instantáneas.
 - Detecta automáticamente si hay **GPU** (`device=0`) o solo **CPU** (`device=-1`).
 - Si falla la carga avanzada, usa un modo de carga simplificado (fallback).
