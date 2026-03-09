@@ -16,6 +16,12 @@ from transformers import pipeline
 import torch
 import docx
 from pypdf import PdfReader
+import sys
+from pathlib import Path
+
+# Añadir src/ al path para importar utils
+sys.path.insert(0, str(Path(__file__).parent / "src"))
+from utils import get_model_path
 
 # Configuración de la página
 st.set_page_config(
@@ -66,8 +72,8 @@ st.markdown("""
 
 @st.cache_resource
 def load_summarizer():
-    # Modelo Narrativa RoBERTa, muy estable y especializado en español
-    model_name = "Narrativa/bsc_roberta2roberta_shared-spanish-finetuned-mlsum-summarization"
+    # Usar modelo fine-tuned si existe, o base de Hugging Face
+    model_name = get_model_path()
     
     try:
         from transformers import AutoTokenizer, AutoModelForSeq2SeqLM

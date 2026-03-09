@@ -106,9 +106,7 @@ footer { display: none !important; }
 """
 
 with gr.Blocks(
-    theme=gr.themes.Soft(primary_hue="blue"),
     title="ResumidorTech Pro",
-    css=CSS,
 ) as demo:
 
     gr.Markdown("# 📰 ResumidorTech Pro", elem_id="titulo")
@@ -142,7 +140,6 @@ with gr.Blocks(
                 label="📝 Resumen generado",
                 lines=10,
                 interactive=False,
-                show_copy_button=True,
             )
 
     gr.Examples(
@@ -170,4 +167,8 @@ if __name__ == "__main__":
     print("🔄 Cargando modelo (puede tardar la primera vez)...")
     _load_model()
     print("✅ Modelo cargado. Abriendo interfaz en http://localhost:7860\n")
-    demo.launch(inbrowser=True)
+    demo.launch(
+        inbrowser=True,
+        theme=gr.themes.Soft(primary_hue="blue"),
+        css=CSS,
+    )
