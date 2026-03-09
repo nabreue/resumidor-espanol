@@ -80,7 +80,7 @@ def load_summarizer():
         # Fallback simple si el anterior falla
         return pipeline("summarization", model=model_name)
 
-def chunk_text(text, max_chars=1800):
+def chunk_text(text, max_chars=1500):
     """Divide el texto en fragmentos que el modelo pueda procesar, respetando párrafos y frases."""
     chunks = []
     current_chunk = ""
@@ -152,21 +152,27 @@ def main():
                 if text_input.strip() == "":
                     st.warning("El archivo parece estar vacío o no se pudo extraer el texto.")
                 else:
-                    with st.expander("Ver texto extraído (previsualización)", expanded=False):
-                        st.text(text_input[:1000] + ("..." if len(text_input) > 1000 else ""))
+                    if len(text_input) > 1500:
+                        st.error("El archivo contiene más de 1500 caracteres. Máximo permitido: 1500 caracteres.")
+                        text_input = ""  # Limpiar para evitar procesamiento
+                    else:
+                        with st.expander("Ver texto extraído (previsualización)", expanded=False):
+                            st.text(text_input[:1000] + ("..." if len(text_input) > 1000 else ""))
             except Exception as e:
                 st.error(f"Error al leer el archivo: {e}")
                 
 
     col1, col2 = st.columns(2)
     with col1:
-        max_len = st.slider("Longitud máxima del resumen", 30, 200, 100)
+        max_len = st.slider("Longitud máxima del resumen", 30, 150, 100)
     with col2:
         min_len = st.slider("Longitud mínima del resumen", 10, 50, 30)
 
     if st.button("Generar Resumen"):
         if text_input.strip() == "":
             st.warning("Por favor, introduce algún texto para resumir.")
+        elif len(text_input) > 1500:
+            st.error("El texto es demasiado largo. Máximo permitido: 1500 caracteres.")
         else:
             with st.spinner("Procesando resumen..."):
                 try:
@@ -186,7 +192,8 @@ def main():
                             continue
                             
                         # Ajustamos longitud máxima del resumen si el fragmento es corto para evitar errores
-                        current_max_len = min(max_len, max(30, len(chunk.split()) // 2))
+                        # Limitamos a 150 para respetar la capacidad del modelo (max 514 tokens)
+                        current_max_len = min(150, max_len, max(30, len(chunk.split()) // 2))
                         current_min_len = min(min_len, max(10, current_max_len - 10))
                         
                         try:
@@ -194,7 +201,8 @@ def main():
                                 chunk, 
                                 max_length=current_max_len, 
                                 min_length=current_min_len, 
-                                do_sample=False
+                                do_sample=False,
+                                truncation=True
                             )
                             all_summaries.append(summary[0]["summary_text"])
                         except Exception as inner_e:
@@ -207,7 +215,24 @@ def main():
                     if not all_summaries:
                         st.error("No se pudo generar ningún resumen válido. Intenta con otro texto.")
                     else:
-                        final_summary = " ".join(all_summaries).strip()
+                        # Unir los resúmenes de los fragmentos
+                        combined_summary = " ".join(all_summaries).strip()
+                        
+                        # Si hay múltiples resúmenes, crear un resumen final coherente
+                        if len(all_summaries) > 1 and len(combined_summary.split()) > 80:
+                            try:
+                                final_summary = summarizer(
+                                    combined_summary, 
+                                    max_length=max_len, 
+                                    min_length=min_len, 
+                                    do_sample=False,
+                                    truncation=True
+                                )[0]["summary_text"]
+                            except Exception as e:
+                                st.warning(f"No se pudo crear resumen final coherente: {e}. Mostrando resúmenes combinados.")
+                                final_summary = combined_summary
+                        else:
+                            final_summary = combined_summary
                         
                         st.markdown("### 📝 Resultado:")
                         st.markdown(f'<div class="result-container">{final_summary}</div>', unsafe_allow_html=True)
